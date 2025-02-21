@@ -25,16 +25,16 @@ app.use(express.json());
 // Configurar CORS para admitir cualquier origen
 // app.use(cors()); // No permitite el envío de cookies en una API pública
 
-if (process.env.NODE_ENV !== "production") {
-  // Configurar CORS para admitir el origen del frontend en desarrollo
-  app.use(
-    cors({
-      origin: "http://localhost:5173", // Permitir el frontend en desarrollo de React
-      //origin: "http://localhost:8081", // Permitir el frontend en desarrollo de React Native
-      credentials: true, // Permitir envío de cookies
-    })
-  );
-}
+// if (process.env.NODE_ENV !== "production") {
+//   // Configurar CORS para admitir el origen del frontend en desarrollo
+//   app.use(
+//     cors({
+//       origin: "http://localhost:5173", // Permitir el frontend en desarrollo de React
+//       //origin: "http://localhost:8081", // Permitir el frontend en desarrollo de React Native
+//       credentials: true, // Permitir envío de cookies
+//     })
+//   );
+// }
 
 // Habilitar el análisis de cookies
 app.use(cookieParser());
