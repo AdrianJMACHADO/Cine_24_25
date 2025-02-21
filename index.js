@@ -55,11 +55,9 @@ app.use(cookieParser());
 
 // Iniciar el servidor solo si no estamos en modo de prueba
 // en modo de prueba, el servidor se inicia en el archivo de prueba
-if (process.env.NODE_ENV !== "test") {
   app.listen(config.port, () => {
     console.log(`Servidor escuchando en el puerto ${config.port}`);
   });
-}
 
 // Exportamos la aplicación para poder hacer pruebas
 module.exports = app;
