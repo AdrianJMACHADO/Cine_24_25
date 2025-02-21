@@ -9,7 +9,7 @@ const express = require("express");
 // Importar librería path, para manejar rutas de ficheros en el servidor
 const path = require("path");
 // Importar libreria CORS
-const cors = require("cors");
+// const cors = require("cors");
 // Importar librería de manejo de cookies
 const cookieParser = require("cookie-parser");
 // Importar gestores de rutas
