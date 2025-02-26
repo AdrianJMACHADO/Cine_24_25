@@ -2,6 +2,10 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
 });
 
+console.log("Modo actual:", process.env.NODE_ENV);
+console.log("Base de datos host:", process.env.DB_HOST);
+
+
 // Importar fichero de configuración con variables de entorno
 const config = require("./config/config");
 // Importar librería express --> web server
