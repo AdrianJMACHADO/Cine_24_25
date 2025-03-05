@@ -110,6 +110,7 @@ app.use(express.json());
 // Configurar CORS para admitir cualquier origen
 const allowedOrigins = [
   "http://localhost:3000",  // Para desarrollo local
+  "http://localhost:5173",
   "https://cine2425-production.up.railway.app", // Para producción
 ];
 
